@@ -1,5 +1,5 @@
 # Site settings
-title: drink's Blog
+title: Drink's Blog
 url: "http://drinksong.github.io"    # the protocol and hostname of your site, eg. `http://laobubu.github.io`
 baseurl: "" # the prefix of your site uri, eg. `/jekyll-theme-EasyBook` or just one slash `/`
 #timezone: Asia/Chongqing
@@ -9,7 +9,7 @@ description: >
 # Your information
 email: zzulisong@hotmail.com
 author: Drink Song
-avatar: "//www.gravatar.com/avatar/your_email_md5?d=mm&s=135"
+avatar: "/img/photo.png"
 profile: One sentence introducing yourself.
 #twitter_username: twitter_username
 #github_username:  github_username
