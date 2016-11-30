@@ -8,9 +8,9 @@ tags: git
 
 ## 集中式vs分布式
 集中式（SVN）<br>
-![图片](http://bos.nj.bpc.baidu.com/v1/agroup/5d90e8b787626e09f173cd7176fc976eabf5823d)<br>
+![图片](/img/git-summary-img1.png)<br>
 分布式（git）<br>
-![图片](http://bos.nj.bpc.baidu.com/v1/agroup/8198856c4eb23cf62eff3b16c525a9449f932723)
+![图片](/img/git-summary-img2.png)
 
 ## 安装
 - 在Linux上安装
@@ -58,7 +58,8 @@ $ git config --global user.email "email@example.com"
 5. 提交到分支
 
 	    git commit -m '描述信息'
-![图片](http://bos.nj.bpc.baidu.com/v1/agroup/63c2cdd814912411cbb457b932a32c56b9df41ac)
+
+      ![图片](/img/git-summary-img3.png)
 
 6. 查看提交历史记录
 
@@ -162,11 +163,11 @@ $ git config --global user.email "email@example.com"
 
 14. 创建于合并分支
       - `master`是主分支，`HEAD`严格来说不是指向提交，而是指向`master`，`master`才是指向提交的，所以，`HEAD`指向的就是当前分支。<br>
-    ![图片](http://bos.nj.bpc.baidu.com/v1/agroup/74a430369a3d17725676d91a4f8094f21ab14a4c)<br>
+    ![图片](/img/git-summary-img4.png)<br>
 
 
       - 当我们创建新的分支，例如`dev`时，Git新建了一个指针叫`dev`，指向`master`相同的提交，再把`HEAD`指向`dev`，就表示当前分支在`dev`上：<br>
-    ![图片](http://bos.nj.bpc.baidu.com/v1/agroup/51580a0a080ce8a8e4c6c9a4d934e8a07eeb61cb)
+    ![图片](/img/git-summary-img5.png)
 
 
     - 切换到dev分支
