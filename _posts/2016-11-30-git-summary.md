@@ -5,10 +5,6 @@ date: 2016-11-20
 category: 开发者手册
 tags: git
 ---
-# git总结
-
-#内容目录
-[TOC]
 
 ## 集中式vs分布式
 集中式（SVN）<br>
