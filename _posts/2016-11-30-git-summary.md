@@ -1,6 +1,9 @@
 ---
 layout: post
 title: git总结
+date: 2016-11-20
+category: 开发者手册
+tags: git
 ---
 # git总结
 
