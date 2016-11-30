@@ -78,7 +78,7 @@ baseUrl: "/test"
 ```
 
 ## 编辑博客内容
-&nbsp;&nbsp;&nbsp;&nbsp;所有的文章都是 _posts 目录下面，文章格式为 mardown 格式，文章文件名可以是 .mardown 或者 .md。
+&nbsp;&nbsp;&nbsp;&nbsp;所有的文章都是 _posts 目录下面，文章格式为 mardown 格式，文章文件名可以是 .mardown 或者 .md。<br>
 &nbsp;&nbsp;&nbsp;&nbsp;编写一篇新文章很简单，你可以直接从 _posts/ 目录下复制一份出来 2016-11-30-welcome-to-jekyll副本.markdown ，修改名字为 2016-11-30-article1.markdown ，注意：文章名的格式前面必须为 2016-11-30- ，日期可以修改，但必须为 年-月-日- 格式，后面的 article1 是整个文章的连接 URL，如果文章名为中文，那么文章的连接URL就会变成这样的：http://drinksong.github.io/2016/11/%E6%90%AD%E5/ ， 所以建议文章名最好是英文的或者阿拉伯数字。 双击 2016-11-30-article1.markdown 打开
 
 ```

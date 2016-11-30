@@ -14,12 +14,16 @@ tags: git
 
 ## 安装
 - 在Linux上安装
-`sudo apt-get install git`
+
+  ```
+  sudo apt-get install git
+  ```
 - 在mac os x上安装
-①安装homebrew，然后通过homebrew安装Git
-②也是推荐的方法，就是直接从AppStore安装Xcode，Xcode集成了Git，不过默认没有安装，你需要运行Xcode，选择菜单“Xcode”->“Preferences”，在弹出窗口中找到“Downloads”，选择“Command Line Tools”，点“Install”就可以完成安装了
+
+  1. 安装`homebrew`，然后通过`homebrew`安装Git<br>
+  2. 也是推荐的方法，就是直接从AppStore安装Xcode，Xcode集成了Git，不过默认没有安装，你需要运行Xcode，选择菜单`Xcode->Preferences`，在弹出窗口中找到`Downloads`，选择`Command Line Tools`，点`Install`就可以完成安装了
 - 在Windows上安装
-msysgit是Windows版的Git，从https://git-for-windows.github.io下载，然后按默认选项安装即可。
+msysgit是Windows版的Git，从[https://git-for-windows.github.io](https://git-for-windows.github.io)下载，然后按默认选项安装即可。
 
 - 安装完成后还需要最后一步：
 ```
@@ -27,8 +31,8 @@ $ git config --global user.name "Your Name"
 $ git config --global user.email "email@example.com"
 ```
 
-因为Git是分布式版本控制系统，所以，每个机器都必须自报家门：你的名字和Email地址。
-注意`git config`命令的`--global`参数，用了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置，当然也可以对某个仓库指定不同的用户名和Email地址。
+  因为Git是分布式版本控制系统，所以，每个机器都必须自报家门：你的名字和Email地址。<br>
+  注意`git config`命令的`--global`参数，用了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置，当然也可以对某个仓库指定不同的用户名和Email地址。
 
 ## 常用命令
 1. 初始化版本库
