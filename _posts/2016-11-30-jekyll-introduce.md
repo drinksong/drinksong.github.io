@@ -91,6 +91,9 @@ categories: jekyll update
 文章正文...
 ```
 
+- layout: 使用模板文件，模板均放在`_layout`下
 - title: 显示的文章名， 如：title: 我的第一篇文章
 - date: 显示的文章发布日期，如：date: 2016-11-30
 - categories: tag标签的分类，如：categories: 随笔
+
+更多头信息设置请参考[这里](http://jekyll.com.cn/docs/frontmatter/)
