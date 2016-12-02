@@ -79,7 +79,7 @@ body: "hello react"
 
 发送请求后通过GET请求查询结果
 
-10. 发送DELETE请求
+10.发送DELETE请求
 
 ```
 http://127.0.0.1:3000/comments/2
