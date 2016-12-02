@@ -9,27 +9,27 @@ tag: REST
 1. 新建一个`json`文件，`db.json`
 
     ```
-      {
-        "posts": [
-          { "id": 1, "title": "json-server", "author": "typicode" }
-        ],
-        "comments": [
-          { "id": 1, "body": "some comment", "postId": 1 }
-        ],
-        "profile": { "name": "typicode" }
-      }
+    {
+      "posts": [
+        { "id": 1, "title": "json-server", "author": "typicode" }
+      ],
+      "comments": [
+        { "id": 1, "body": "some comment", "postId": 1 }
+      ],
+      "profile": { "name": "typicode" }
+    }
     ```
 
 2. 新建一个`package.json`文件
 
     ```
-      $ npm init
+    $ npm init
     ```
 
 3. 安装`json-server`
 
     ```
-      $ npm install -S json-server
+    $ npm install -S json-server
     ```
 
 4. 打开`package.json`，在`scripts`字段添加一行
