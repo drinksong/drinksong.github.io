@@ -47,7 +47,7 @@ tag: REST
     ```
 
 6. 打开`chrome`中的`postman`
-![postman截图](../img/rest-demo.png)
+    ![postman截图](../img/rest-demo.png)
 
 7. 发送GET请求
 
@@ -55,7 +55,7 @@ tag: REST
     http://127.0.0.1:3000/posts
     http://127.0.0.1:3000/posts/1
     ```
-查询结果
+    查询结果
 
 8. 发送POST请求
 
@@ -65,7 +65,7 @@ tag: REST
     body: "hello world"
     postId: 1
     ```
-发送请求后通过GET请求查询结果
+    发送请求后通过GET请求查询结果
 
 9. 发送PUT请求
 
@@ -74,12 +74,12 @@ tag: REST
     // 数据体BODY选择`x-www-form-urlencoded`编码，填写如下字段
     body: "hello react"
     ```
-发送请求后通过GET请求查询结果
+    发送请求后通过GET请求查询结果
 
 10. 发送DELETE请求
 
     ```
     http://127.0.0.1:3000/comments/2
     ```
-发送请求后通过GET请求查询结果
+    发送请求后通过GET请求查询结果
 
