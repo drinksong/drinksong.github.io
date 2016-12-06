@@ -166,6 +166,7 @@ $ git config --global user.email "email@example.com"
     可以使用`ssh`协议和`https`协议，但是使用`https`除了速度慢以外，还有个最大的麻烦是每次推送都必须输入口令，但是在某些只开放`http`端口的公司内部就无法使用`ssh`协议而只能用`https`。
 
 14. 推送到远端某个分支
+
         // 推送到远端branch1分支
         $ git push orgin master:branch1
 
