@@ -165,7 +165,11 @@ $ git config --global user.email "email@example.com"
 
     可以使用`ssh`协议和`https`协议，但是使用`https`除了速度慢以外，还有个最大的麻烦是每次推送都必须输入口令，但是在某些只开放`http`端口的公司内部就无法使用`ssh`协议而只能用`https`。
 
-14. 创建于合并分支
+14. 推送到远端某个分支
+        // 推送到远端branch1分支
+        $ git push orgin master:branch1
+
+15. 创建于合并分支
       - `master`是主分支，`HEAD`严格来说不是指向提交，而是指向`master`，`master`才是指向提交的，所以，`HEAD`指向的就是当前分支。<br>
     ![图片](/img/git-summary-img4.png)<br>
 
@@ -196,10 +200,10 @@ $ git config --global user.email "email@example.com"
 
           $ git branch -d dev
 
-15. 查看远程库信息
+16. 查看远程库信息
 
         $ git remote -v
 
-16. 查看配置文件信息
+17. 查看配置文件信息
 
         cat .git/config
