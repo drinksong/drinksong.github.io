@@ -208,3 +208,39 @@ $ git config --global user.email "email@example.com"
 17. 查看配置文件信息
 
         cat .git/config
+
+18. 配置子模块
+
+        // 将B仓库添加为A仓库的子模块
+        $ git submodule add git@github.com:drinksong/b.git
+        // 默认情况下，子模块会将子项目放到一个与仓库名同名的目录中，如本例中的'b'，如果你想放到其他地方，那么可以在命令结尾添加一个不同的路径
+
+        // 查看代码块状态
+        $ git status
+
+        new file: .gitmodules
+        new b
+
+        // .gitmodule文件保存了项目URL与已经拉取的本地目录之间的映射：
+        [submodule "b"]
+	    path = b
+	    url = ssh://git@github.com:drinksong/b
+
+	    // 虽然b是工作目录中的一个子目录，但是git还是会将它视作一个子模块。当你不在那个目录中时，Git 并不会跟踪它的内容， 而是将它看作该仓库中的一个特殊提交。
+
+	    // 克隆含有子模块的项目
+	    // 方法1：
+	    $ git clone ssh://git@github.com:drinksong/a.git
+
+	    // 初始化本地配置文件
+	    $ git submodule init
+
+	    // 从项目中抓取所有数据并检出父项目中列出的合适提交
+	    $ git submodule update
+
+	    // 方法2：
+	    $ git clone --recursive ssh://git@github.com:drinksong/a.git
+
+ 其他更多操作参考[这里](https://git-scm.com/book/zh/v2/Git-%E5%B7%A5%E5%85%B7-%E5%AD%90%E6%A8%A1%E5%9D%97)。
+
+
