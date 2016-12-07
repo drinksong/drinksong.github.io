@@ -8,6 +8,7 @@ tags: Javascript
 ## 语言特性
 1.const let关键字
 众所周知，在`Javascript`中，变量默认是全局性的，只存在函数级作用域，声明函数曾经是创造作用域的唯一方法，不存在块级作用域，在ES6提出了`let`关键词是这个缺陷得到了修复。
+
 ```
 if (ture) {
     let a = 'name';
@@ -15,7 +16,9 @@ if (ture) {
 console.log(a);
 // ReferenceError: a is not defined
 ```
+
 同时还引入了`const`，用来定义一个变量，一旦定义以后不可以修改，不过如果是引用类型，那么可以改变它的属性。
+
 ```
 const MYNAME = 'drink';
 MYNAME = 'song';
