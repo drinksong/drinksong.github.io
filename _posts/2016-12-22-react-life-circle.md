@@ -14,6 +14,7 @@ tags: react
 - `getDefaultProps`只会在装载之前调动一次，在组件中赋值的数据会被设置到`this.props`中。
 
 - `getInitialState`只会在装载之前调用一次，这个函数的返回值会被设置到`this.state`中。需要注意的是，在`ES6`的写法中，只需要写在`constructor`中即可，如下：
+
 ```
 class MyComponent extends React.component {
     constructor(props) {
