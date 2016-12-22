@@ -1,6 +1,6 @@
 ---
 layout: post
-title: REACT组件的声明周期
+title: react组件的声明周期
 date: 2016-12-12
 category: Javascript
 tags: react
