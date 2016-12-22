@@ -1,6 +1,6 @@
 ---
 layout: post
-title: flux和redux流程
+title: Flux和Redux流程
 date: 2016-12-12
 category: Javascript
 tags: react
