@@ -142,7 +142,7 @@ function user(state = initalUserStates, action) {
 ```
 
 <br>
->特别注意：不能改变`state`值。在上面函数中，每次返回的都是全新的对象，而不是直接改变`state`值。
+> 特别注意：不能改变`state`值。在上面函数中，每次返回的都是全新的对象，而不是直接改变`state`值。
 
 合并`reducer`：
 
