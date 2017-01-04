@@ -43,9 +43,12 @@ tags: webpack
 HMR前缀的信息由`webpack/hot/dev-server`模块产生，WDS前缀的信息由`webpack-dev-server`客户端产生。
 
 2) `Node.js API`方式需要做三个配置：
- - 把`webpack/hot/dev-server`加入到`webpack`配置文件的`entry`项；
- - 把`new webpack.HotModuleReplacementPlugin()`加入到`webpack`配置文件的`plugins`项；
- - 把`hot:true`加入到`webpack-dev-server`的配置项里面。
+
+- 把`webpack/hot/dev-server`加入到`webpack`配置文件的`entry`项；
+
+- 把`new webpack.HotModuleReplacementPlugin()`加入到`webpack`配置文件的`plugins`项；
+
+- 把`hot:true`加入到`webpack-dev-server`的配置项里面。
 
  注意：要使HMR功能生效，还需要做一件事情，就是要在应用热替换的模块或者根模块里面加入允许热替换的代码。否则，热替换不会生效，还是会重刷整个页面。下面是摘自`webpack`在`github`上docs的原话：
 
@@ -53,10 +56,11 @@ HMR前缀的信息由`webpack/hot/dev-server`模块产生，WDS前缀的信息�
 
  具体代码是：
 
- ```
- if(module.hot)
-     module.hot.accept();
- ```
+```
+if (module.hot) {
+   module.hot.accept();
+}
+```
 
  也可以使用一些插件去完成这个工作，例如`webpack-module-hot-accept`插件。不过，`webpack-dev-server HMR`结合`react-hot-loader`使用的时候，`react-hot-loader`会去做这个工作。
 
