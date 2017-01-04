@@ -34,6 +34,7 @@ tags: webpack
 `webpack-dev-srever`持Hot Module Replacement，即模块热替换，在前端代码变动的时候无需整个刷新页面，只把变化的部分替换掉。使用HMR功能也有两种方式：命令行方式和`Node.js API`。
 
 1) 命令行方式同样比较简单，只需加入`--line --hot`选项。`--hot`这个选项干了一件事情，它把webpack/hot/dev-server入口点加入到了webpack配置文件中。这时访问浏览器，你会看见控制台的log信息：
+
 ```
 [HMR] Waiting for update signal from WDS...
 [WDS] Hot Module Replacement enabled.
