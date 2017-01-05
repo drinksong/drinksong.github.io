@@ -19,12 +19,12 @@ tags: webpack
 
 - 使用`inline`模式有两种方式：命令行方式和`Node.js API`。
 
-1) 命令行方式比较简单，只需要加入`--line`即可。例如`webpack-dev-server --line`
+1) 命令行方式比较简单，只需要加入`--inline`即可。例如`webpack-dev-server --inline`
 
-使用`--line`会自动把`webpack-dev-server`客户端加到`webpack`的入口文件配置中。
+使用`--inline`会自动把`webpack-dev-server`客户端加到`webpack`的入口文件配置中。
 
 注意：使用`webpack-dev-server`命令行的时候，会自动查找名为`webpack.config.js`的配置文件。如果你的配置文件名称不是`webpack.config.js`，需要命令行中指明配置文件。
-例如，配置文件是`webpack.config.dev.js`，那么命令就应该是`webpack-dev-server --line --config webpack.config.dev.js`
+例如，配置文件是`webpack.config.dev.js`，那么命令就应该是`webpack-dev-server --inline --config webpack.config.dev.js`
 
 2) `Node.js API`的方式需要手动把`webpack-dev-server/client?http://localhost:8080`加到配置文件的入口文件配置中，因为`webpack-dev-server`没有`inline:true`这个配置项。
 
@@ -33,7 +33,7 @@ tags: webpack
 
 `webpack-dev-srever`持Hot Module Replacement，即模块热替换，在前端代码变动的时候无需整个刷新页面，只把变化的部分替换掉。使用HMR功能也有两种方式：命令行方式和`Node.js API`。
 
-1) 命令行方式同样比较简单，只需加入`--line --hot`选项。`--hot`这个选项干了一件事情，它把webpack/hot/dev-server入口点加入到了webpack配置文件中。这时访问浏览器，你会看见控制台的log信息：
+1) 命令行方式同样比较简单，只需加入`--inline --hot`选项。`--hot`这个选项干了一件事情，它把webpack/hot/dev-server入口点加入到了webpack配置文件中。这时访问浏览器，你会看见控制台的log信息：
 
 ```
 [HMR] Waiting for update signal from WDS...
