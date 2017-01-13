@@ -40,11 +40,11 @@ tags: webpack
 [WDS] Hot Module Replacement enabled.
 ```
 
-HMR前缀的信息由`webpack/hot/dev-server`模块产生，WDS前缀的信息由`webpack-dev-server`客户端产生。
+HMR前缀的信息由`webpack/hot/only-dev-server`模块产生，WDS前缀的信息由`webpack-dev-server`客户端产生。
 
 2) `Node.js API`方式需要做三个配置：
 
-- 把`webpack/hot/dev-server`加入到`webpack`配置文件的`entry`项；
+- 把`webpack/hot/only-dev-server`加入到`webpack`配置文件的`entry`项；
 
 - 把`new webpack.HotModuleReplacementPlugin()`加入到`webpack`配置文件的`plugins`项；
 
