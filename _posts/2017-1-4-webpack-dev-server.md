@@ -27,6 +27,7 @@ tags: webpack
 例如，配置文件是`webpack.config.dev.js`，那么命令就应该是`webpack-dev-server --inline --config webpack.config.dev.js`
 
 2) `Node.js API`的方式需要手动把`webpack-dev-server/client?http://localhost:8080`加到配置文件的入口文件配置中，因为`webpack-dev-server`没有`inline:true`这个配置项。
+（注意：通常我们设置好`webpack-dev-server`服务自动刷新预览功能之后，发现手机预览不了，其实是由于`webpack-pack-server`服务安全机制导致的，只允许本机访问，我们可以把host设置为0.0.0.0就可以允许或者设置为本机地址。）
 
 
 ## 支持热替换
