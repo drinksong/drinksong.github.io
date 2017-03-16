@@ -98,6 +98,6 @@ no-cache表示必须先与服务器确认返回的响应是否被更改，然后
 
 ## 总结
 
-![图片](/img/browser-cache-7.png)<br />
+![图片](/img/browser-cache-7.png)
 
 ![图片](/img/browser-cache-8.png)
