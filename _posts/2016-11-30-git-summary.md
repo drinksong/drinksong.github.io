@@ -145,7 +145,7 @@ $ git config --global user.email "email@example.com"
 11. 添加远程仓库
 
 
-        $ git add remote origin git@github.com:drinksong/test.git
+        $ git remote add origin git@github.com:drinksong/test.git
 
     添加后，远程库的名字就是`origin`，这是Git默认的叫法，也可以改成别的，但是`origin`这个名字一看就知道是远程库。
 
