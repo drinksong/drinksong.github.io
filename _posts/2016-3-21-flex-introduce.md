@@ -142,13 +142,23 @@ justify-content: flex-start | flex-end | center | space-between | space-around;
 
 - flex-start(default): (左对齐)
 
+![图片](/img/flex-introduce-10.png)
+
 - flex-end: (右对齐)
+
+![图片](/img/flex-introduce-11.png)
 
 - center: (居中)
 
+![图片](/img/flex-introduce-12.png)
+
 - space-between: (两端对齐，项目中间间隔相等)
 
+![图片](/img/flex-introduce-13.png)
+
 - space-around: (每个项目两侧间隔相等)
+
+![图片](/img/flex-introduce-14.png)
 
 ### align-items
 
@@ -160,14 +170,23 @@ align-items: flex-start | flex-end | center | baseline | stretch;
 
 - stretch(default): (如果没有设置高度或者设置为auto，会占满整个容器高度)
 
+![图片](/img/flex-introduce-19.png)
+
 - flex-start: (纵轴起点对齐)
+
+![图片](/img/flex-introduce-15.png)
 
 - flex-end: (纵轴终点对齐)
 
+![图片](/img/flex-introduce-16.png)
+
 - center: (纵轴中点对齐)
 
-- baseline: (项目第一行文字的基线对齐)
+![图片](/img/flex-introduce-17.png)
 
+- baseline: (项目第一行文字的基线对齐)，对基线基线不了解的可以看[这篇文章](http://www.zhangxinxu.com/wordpress/2010/05/%E6%88%91%E5%AF%B9css-vertical-align%E7%9A%84%E4%B8%80%E4%BA%9B%E7%90%86%E8%A7%A3%E4%B8%8E%E8%AE%A4%E8%AF%86%EF%BC%88%E4%B8%80%EF%BC%89/)
+
+![图片](/img/flex-introduce-18.png)
 
 ### align-content
 
@@ -178,5 +197,30 @@ align-content: flex-start | flex-end | center | space-between | space-around | s
 ```
 
 - stretch(default): (轴线占满整个纵轴)
+
+![图片](/img/flex-introduce-20.png)
+
+- flex-end: (纵轴起点对齐)
+
+![图片](/img/flex-introduce-21.png)
+
+- flex-end: (纵轴终点对齐)
+
+![图片](/img/flex-introduce-22.png)
+
+- center: (纵轴中点对齐)
+
+![图片](/img/flex-introduce-23.png)
+
+-space-between: (与交叉轴两端对齐，轴线之间的间隔平均分布)
+
+![图片](/img/flex-introduce-23.png)
+
+- space-around: (每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍)
+
+![图片](/img/flex-introduce-24.png)
+
+
+
 
 
