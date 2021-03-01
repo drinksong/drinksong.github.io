@@ -61,6 +61,29 @@ mixpanel.init("f18339bafb2584ce0bb9bcd63903b37a");</script><!-- end Mixpanel -->
         ga('send', 'pageview');
 
     </script>
+  
+  <script>    
+(function(win, export_obj) {
+    win['TeaAnalyticsObject'] = export_obj;
+    if (!win[export_obj]) {
+        function _collect() {
+            _collect.q.push(arguments);
+        }
+        _collect.q = _collect.q || [];
+        win[export_obj] = _collect;            
+    }
+    win[export_obj].l = +new Date();
+})(window, 'collectEvent');
+</script>
+<script async src="https://sf1-scmcdn-tos.pstatp.com/goofy/log-sdk/collect/collect-autotrack-rangers.js"></script>
+<script>
+    window.collectEvent('init', { 
+   	app_id:216817,
+    channel: 'cn', 
+   	autotrack: false  //默认关闭，需要热力图及圈选功能可开启
+    });
+    window.collectEvent('start')
+</script>
 
     <script type="text/javascript">
     window._pt_lt = new Date().getTime();
