@@ -61,7 +61,21 @@ mixpanel.init("f18339bafb2584ce0bb9bcd63903b37a");</script><!-- end Mixpanel -->
         ga('send', 'pageview');
 
     </script>
+
+    <script type="text/javascript">
+    window._pt_lt = new Date().getTime();
+    window._pt_sp_2 = [];
+    _pt_sp_2.push('setAccount,690c63fd');
+    var _protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    (function() {
+        var atag = document.createElement('script'); atag.type = 'text/javascript'; atag.async = true;
+        atag.src = _protocol + 'js.ptengine.cn/690c63fd.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(atag, s);
+    })();
+    </script>
   
+<!--  火山引擎  -->
   <script>    
 (function(win, export_obj) {
     win['TeaAnalyticsObject'] = export_obj;
@@ -78,23 +92,11 @@ mixpanel.init("f18339bafb2584ce0bb9bcd63903b37a");</script><!-- end Mixpanel -->
 <script async src="https://sf1-scmcdn-tos.pstatp.com/goofy/log-sdk/collect/collect-autotrack-rangers.js"></script>
 <script>
     window.collectEvent('init', { 
-      app_id:216817,
+      app_id:216826,
       channel: 'cn', 
-      autotrack: true  //默认关闭，需要热力图及圈选功能可开启
+      autotrack: false  //默认关闭，需要热力图及圈选功能可开启
     });
     window.collectEvent('start')
 </script>
-
-    <script type="text/javascript">
-    window._pt_lt = new Date().getTime();
-    window._pt_sp_2 = [];
-    _pt_sp_2.push('setAccount,690c63fd');
-    var _protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-    (function() {
-        var atag = document.createElement('script'); atag.type = 'text/javascript'; atag.async = true;
-        atag.src = _protocol + 'js.ptengine.cn/690c63fd.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(atag, s);
-    })();
-    </script>
+  
 </head>
